@@ -1,6 +1,8 @@
 import Head from "next/head"
 import Calendly from "./components/LandingPage/Calendly"
 import ContactForm from "./components/LandingPage/ContactForm"
+import AppBar from "./components/LandingPage/Appbar"
+import CustomizedAccordions from "./components/LandingPage/FAQ"
 
 export default function Home() {
   return (
@@ -10,7 +12,8 @@ export default function Home() {
         <meta name="description" content="Tuition services" />
       </Head>
       <main>
-        <h1>Welcome to Our Tuition Services</h1>
+        <AppBar />
+        <CustomizedAccordions />
         <Calendly />
         <ContactForm />
       </main>

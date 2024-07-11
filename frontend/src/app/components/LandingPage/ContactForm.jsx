@@ -35,7 +35,7 @@ const ContactForm = () => {
       noValidate
       sx={{ mt: 1 }}
     >
-      <Box gridColumn={{ xs: "span 1", sm: "span 4" }}>
+      <Box gridColumn={{ xs: "span 4" }}>
         <Box display="flex">
           <TextField
             margin="normal"
@@ -59,7 +59,7 @@ const ContactForm = () => {
           />
         </Box>
       </Box>
-      <Box gridColumn={{ xs: "span 1", sm: "span 4" }}>
+      <Box gridColumn={{ xs: "span 4" }}>
         <TextField
           margin="normal"
           required
@@ -73,7 +73,7 @@ const ContactForm = () => {
           maxRows={4}
         />
       </Box>
-      <Box gridColumn={{ xs: "span 1", sm: "span 4" }}>
+      <Box gridColumn={{ xs: "span 4" }}>
         <Button
           type="submit"
           fullWidth
