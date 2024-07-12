@@ -23,7 +23,16 @@ const drawerWidth = 240
 const navItems = ["Shop", "Account", "Liked", "Cart"]
 const rightItems = ["Account", "Liked", "Cart"]
 
-function HideOnScroll(props) {
+interface HideOnScrollProps {
+  children: React.ReactElement
+  window?: () => Window
+}
+
+interface DrawerAppBarProps {
+  window?: () => Window
+}
+
+function HideOnScroll(props: HideOnScrollProps) {
   const { children, window } = props
   // Note that you normally won't need to set the window ref as useScrollTrigger
   // will default to window.
@@ -39,7 +48,7 @@ function HideOnScroll(props) {
   )
 }
 
-export default function DrawerAppBar(props) {
+export default function DrawerAppBar(props: DrawerAppBarProps) {
   const { window } = props
   const [mobileOpen, setMobileOpen] = React.useState(false)
 
