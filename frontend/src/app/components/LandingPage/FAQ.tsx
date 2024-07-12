@@ -65,15 +65,16 @@ export default function CustomizedAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            In my three years of teaching, I've found that this lesson duration
-            works best. They give us the time to balance learning theory and
-            putting it into practice. You see, one hour just isn't enough for
-            students to understand and apply what they've learned. With every
-            lesson, we make sure to practice exam questions to ensure that what
-            they have learnt can be applied correctly. It allows them to make
-            mistakes in a safe space, and learn from them before exams. It's all
-            about making sure the learning sticks and preparing them for
-            success, both in class and beyond.
+            In my three years of teaching, I&apos;ve found that this lesson
+            duration works best. They give us the time to balance learning
+            theory and putting it into practice. You see, one hour just
+            isn&apos;t enough for students to understand and apply what
+            they&apos;ve learned. With every lesson, we make sure to practice
+            exam questions to ensure that what they have learnt can be applied
+            correctly. It allows them to make mistakes in a safe space, and
+            learn from them before exams. It&apos;s all about making sure the
+            learning sticks and preparing them for success, both in class and
+            beyond.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -125,7 +126,7 @@ export default function CustomizedAccordions() {
           <Typography sx={{ my: 1 }}>
             If for any reason your child can not attend their lesson, we must be
             notified a minimum of three days prior to the lesson. This way, we
-            can promptly reschedule your child's lesson as a catch-up into
+            can promptly reschedule your child&apos;s lesson as a catch-up into
             another class of ours, either during the weekday or next weekend.
           </Typography>
           <Typography sx={{ my: 1 }}>
@@ -165,7 +166,7 @@ export default function CustomizedAccordions() {
           </Typography>
           <Typography sx={{ my: 1 }}>
             General Science lessons are charged at the normal lesson price and
-            are tailored to fit families who don’t have much availability
+            are tailored to fit families who don&apos;t have much availability
             throughout the week. They are perfect for high-achieving students
             who need to spend more time reviewing and revising content.
           </Typography>
