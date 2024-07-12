@@ -1,10 +1,8 @@
 import Head from "next/head"
-import Calendly from "./components/LandingPage/Calendly"
-import ContactForm from "./components/LandingPage/ContactForm"
+import Home from "./components/LandingPage/Home"
 import AppBar from "./components/LandingPage/Appbar"
-import CustomizedAccordions from "./components/LandingPage/FAQ"
 
-export default function Home() {
+export default function Page() {
   return (
     <div>
       <Head>
@@ -13,9 +11,7 @@ export default function Home() {
       </Head>
       <main>
         <AppBar />
-        <CustomizedAccordions />
-        <Calendly />
-        <ContactForm />
+        <Home />
       </main>
     </div>
   )

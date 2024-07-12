@@ -24,19 +24,19 @@ const ContactForm = () => {
   }
 
   return (
-    <Box
-      component="form"
-      onSubmit={handleSubmit}
-      display="grid"
-      gridTemplateColumns={{
-        xs: "repeat(2, minmax(0, 1fr))", // 3 columns on small screens
-        md: "repeat(4, minmax(0, 1fr))", // 4 columns on medium screens
-      }}
-      noValidate
-      sx={{ mt: 1 }}
-    >
-      <Box gridColumn={{ xs: "span 4" }}>
-        <Box display="flex">
+    <Box display="flex" justifyContent="center">
+      <Box
+        component="form"
+        onSubmit={handleSubmit}
+        display="grid"
+        gridTemplateColumns={{ md: "1fr 1fr" }}
+        noValidate
+        sx={{ mt: 1, width: { xs: 0.8, md: 0.6, lg: 0.5 } }}
+      >
+        <Box
+          gridColumn={{ xs: "span 2" }}
+          display={{ xs: "block", sm: "flex" }}
+        >
           <TextField
             margin="normal"
             required
@@ -58,30 +58,30 @@ const ContactForm = () => {
             autoComplete="email"
           />
         </Box>
-      </Box>
-      <Box gridColumn={{ xs: "span 4" }}>
-        <TextField
-          margin="normal"
-          required
-          fullWidth
-          id="text"
-          label="Text"
-          name="text"
-          type="text"
-          multiline
-          rows={2}
-          maxRows={4}
-        />
-      </Box>
-      <Box gridColumn={{ xs: "span 4" }}>
-        <Button
-          type="submit"
-          fullWidth
-          variant="contained"
-          sx={{ mt: 3, mb: 2 }}
-        >
-          Contact us
-        </Button>
+        <Box gridColumn={{ xs: "span 2" }}>
+          <TextField
+            margin="normal"
+            required
+            fullWidth
+            id="text"
+            label="Text"
+            name="text"
+            type="text"
+            multiline
+            rows={3}
+            maxRows={4}
+          />
+        </Box>
+        <Box gridColumn={{ xs: "span 2" }}>
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            sx={{ mt: 3, mb: 2 }}
+          >
+            Contact us
+          </Button>
+        </Box>
       </Box>
     </Box>
   )

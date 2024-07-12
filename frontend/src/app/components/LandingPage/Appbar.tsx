@@ -50,14 +50,14 @@ export default function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        House of Oud
+        Hatch
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <Link to={`/${item}`}>
+              <Link>
                 <ListItemText primary={item} />
               </Link>
             </ListItemButton>
@@ -101,36 +101,22 @@ export default function DrawerAppBar(props) {
             >
               <MenuIcon />
             </IconButton>
-
-            <Box sx={{ display: { xs: "none", sm: "block" }, flex: 1 }}>
-              <Button
-                sx={{ color: "#fff", fontSize: { sm: "10px", md: "13px" } }}
-              >
-                <Link>Shop</Link>
-              </Button>
-            </Box>
-
-            {/* <IconButton
-              color="black"
-              edge="start"
-              sx={{ m: 0, p: 0.75, display: { sm: "none" } }}
-            >
-              <SearchIcon />
-            </IconButton> */}
-
-            <Button
+            <Box
               sx={{
-                textAlign: "center",
+                textAlign: "left",
                 color: "#fff",
                 width: "fit-content",
+                flex: 1,
               }}
             >
-              <Link>
-                <Typography variant="h6" component="div">
-                  Hatch tuition
-                </Typography>
-              </Link>
-            </Button>
+              <Button>
+                <Link>
+                  <Typography variant="h6" component="div">
+                    Hatch tuition
+                  </Typography>
+                </Link>
+              </Button>
+            </Box>
 
             <Box
               sx={{
@@ -141,19 +127,30 @@ export default function DrawerAppBar(props) {
               }}
             >
               <Button
+                sx={{ color: "#fff", fontSize: { sm: "10px", md: "13px" } }}
+              >
+                <Link>What we teach</Link>
+              </Button>
+              <Button
                 sx={{
                   color: "#fff",
                   fontSize: { sm: "10px", md: "13px" },
                 }}
               >
-                <Link>liked</Link>
+                <Link>Online tuition</Link>
+              </Button>
+
+              <Button
+                sx={{ color: "#fff", fontSize: { sm: "10px", md: "13px" } }}
+              >
+                <Link>About</Link>
+              </Button>
+              <Button
+                sx={{ color: "#fff", fontSize: { sm: "10px", md: "13px" } }}
+              >
+                <Link>curriculum</Link>
               </Button>
             </Box>
-            <Box
-              display={{ xs: "flex", sm: "none" }}
-              justifyContent="right"
-              flex={1.26}
-            ></Box>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
