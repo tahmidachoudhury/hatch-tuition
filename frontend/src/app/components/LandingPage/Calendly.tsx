@@ -12,12 +12,11 @@ const Calendly = () => {
   }, [])
 
   return (
-    <div
+    <Box
       className="calendly-inline-widget"
       data-url="https://calendly.com/online-hatchtuition/30min"
-      data-resize="true"
-      style={{ minWidth: "320px", height: "700px", overflow: "hidden" }}
-    ></div>
+      sx={{ minWidth: "320px", height: { xs: "820px", md: "700px" } }}
+    ></Box>
   )
 }
 
