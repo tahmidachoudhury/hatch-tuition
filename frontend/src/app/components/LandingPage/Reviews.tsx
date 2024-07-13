@@ -20,11 +20,13 @@ export default function ReviewSection() {
       </Box>
       <Box
         sx={{
-          display: "grid",
-          gridTemplateColumns: { md: "1fr 1fr" },
-          gap: 2,
-          width: "40%",
+          display: "flex",
+          flexFlow: { xs: "row wrap", sm: "column wrap" },
+          alignItems: "center",
           py: 4,
+          width: { xs: "80%", sm: "60%", lg: "50%" },
+          height: { xs: "auto", sm: "2200px", md: "1500px", lg: "1200px" },
+          gap: 2,
         }}
       >
         {reviews.map((item, index) => (
@@ -34,13 +36,24 @@ export default function ReviewSection() {
             key={index}
             sx={{
               px: 4,
+              width: { xs: "100%", md: "50%" },
               py: 2,
               background: "rgb(233, 234, 251)",
             }}
           >
-            <Typography>{item.name}</Typography>
-            <Typography>{item.year_group}</Typography>
-            <Typography>{item.comment}</Typography>
+            <Box display="flex" flexDirection="column">
+              <Typography variant="subtitle1" gutterBottom>
+                {item.comment}
+              </Typography>
+              <Box justifySelf="flex-end">
+                <Typography variant="body2" gutterBottom>
+                  {item.name}
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                  {item.year_group}
+                </Typography>
+              </Box>
+            </Box>
           </Paper>
         ))}
       </Box>

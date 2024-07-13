@@ -55,7 +55,7 @@ export default function CustomizedAccordions() {
     }
 
   return (
-    <div>
+    <div style={{ paddingTop: "10px", paddingBottom: "10px" }}>
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
