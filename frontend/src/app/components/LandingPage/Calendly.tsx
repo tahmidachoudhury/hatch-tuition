@@ -15,7 +15,6 @@ const Calendly = () => {
     <div
       className="calendly-inline-widget"
       data-url="https://calendly.com/online-hatchtuition/30min"
-      data-resize="true"
       style={{ minWidth: "320px", height: "700px", overflow: "hidden" }}
     ></div>
   )
