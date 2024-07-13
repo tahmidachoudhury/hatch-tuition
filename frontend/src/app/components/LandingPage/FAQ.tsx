@@ -55,7 +55,7 @@ export default function CustomizedAccordions() {
     }
 
   return (
-    <div style={{ marginTop: "62px" }}>
+    <div>
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}

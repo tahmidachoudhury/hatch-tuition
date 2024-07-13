@@ -20,8 +20,7 @@ import Button from "@mui/material/Button"
 import { Link } from "@mui/material"
 
 const drawerWidth = 240
-const navItems = ["Shop", "Account", "Liked", "Cart"]
-const rightItems = ["Account", "Liked", "Cart"]
+const navItems = ["WHAT WE TEACH", "ONLINE TUITION", "ABOUT", "CURRICULUM"]
 
 interface HideOnScrollProps {
   children: React.ReactElement
