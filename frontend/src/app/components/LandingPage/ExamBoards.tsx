@@ -25,10 +25,9 @@ export default function ExamBoards() {
         <Box>
           <h1>Tailored Towards All Exam Boards</h1>
           <Typography width={{ xs: "100%", md: "40%" }}>
-            All courses at Learning Labs are tailored towards each students
-            specific exam boards. With decades of experience in education,
-            Learning Labs is able to ensure all details of the respective
-            specification are met!
+            All courses at Hatch are tailored towards each students specific
+            exam boards. With decades of experience in education, Hatch is able
+            to ensure all details of the respective specification are met!
           </Typography>
         </Box>
         <Box
