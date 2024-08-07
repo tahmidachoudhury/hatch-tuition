@@ -10,7 +10,7 @@ import MuiAccordionSummary, {
 import MuiAccordionDetails from "@mui/material/AccordionDetails"
 import Typography from "@mui/material/Typography"
 
-const Accordion = styled((props: AccordionProps) => (
+const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
   border: `1px solid ${theme.palette.divider}`,
@@ -22,7 +22,7 @@ const Accordion = styled((props: AccordionProps) => (
   },
 }))
 
-const AccordionSummary = styled((props: AccordionSummaryProps) => (
+const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
     expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: "0.9rem" }} />}
     {...props}
@@ -47,12 +47,11 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }))
 
 export default function CustomizedAccordions() {
-  const [expanded, setExpanded] = React.useState<string | false>("")
+  const [expanded, setExpanded] = React.useState(false)
 
-  const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
-      setExpanded(newExpanded ? panel : false)
-    }
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded ? panel : false)
+  }
 
   return (
     <div style={{ paddingTop: "10px", paddingBottom: "10px" }}>
