@@ -10,6 +10,7 @@ import { Montserrat } from "next/font/google"
 import ExamBoards from "./ExamBoards"
 import Footer from "./Footer"
 import SimpleSlider from "./Slider"
+import AccordionSection from "./AccordionSection"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <ExamBoards />
       <ReviewSection />
+      <AccordionSection />
       <CustomizedAccordions />
       <Calendly />
       <ContactForm />
