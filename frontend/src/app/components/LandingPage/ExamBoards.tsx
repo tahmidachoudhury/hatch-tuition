@@ -3,6 +3,7 @@
 
 import { WidthFull } from "@mui/icons-material"
 import { Box, Typography } from "@mui/material"
+import Image from "next/image"
 
 const imgStyle = {
   height: "140px",
@@ -25,10 +26,9 @@ export default function ExamBoards() {
         <Box>
           <h1>Tailored Towards All Exam Boards</h1>
           <Typography width={{ xs: "100%", md: "40%" }}>
-            All courses at Learning Labs are tailored towards each students
-            specific exam boards. With decades of experience in education,
-            Learning Labs is able to ensure all details of the respective
-            specification are met!
+            All courses at Hatch are tailored towards each students specific
+            exam boards. With decades of experience in education, Hatch is able
+            to ensure all details of the respective specification are met!
           </Typography>
         </Box>
         <Box
@@ -37,12 +37,21 @@ export default function ExamBoards() {
             gridTemplateColumns: { xs: "repeat(2, 1fr)", md: "repeat(3, 1fr)" },
           }}
         >
-          {examboards.map((board) => (
-            <Box display="flex" justifyContent="center">
-              <img
-                key={board}
-                style={imgStyle}
-                src={`images/${board}`}
+          {examboards.map((board, index) => (
+            <Box
+              key={index}
+              sx={{
+                position: "relative",
+                width: "200px",
+                height: "200px",
+                margin: "0 10px",
+              }}
+            >
+              <Image
+                key={index}
+                layout="fill"
+                objectFit="contain"
+                src={`/images/${board}`}
                 alt={board}
               />
             </Box>
