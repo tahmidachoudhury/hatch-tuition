@@ -3,6 +3,7 @@
 import * as React from "react"
 import { styled } from "@mui/material/styles"
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp"
+import AddIcon from "@mui/icons-material/Add"
 import MuiAccordion from "@mui/material/Accordion"
 import MuiAccordionSummary from "@mui/material/AccordionSummary"
 import MuiAccordionDetails from "@mui/material/AccordionDetails"
@@ -16,6 +17,7 @@ const Accordion = styled((props) => (
   "&:not(:last-child)": {
     borderBottom: 0,
   },
+  backgroundColor: "inherit",
   "&::before": {
     display: "none",
   },
@@ -23,15 +25,13 @@ const Accordion = styled((props) => (
 
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
-    expandIcon={
-      <ArrowForwardIosSharpIcon sx={{ fontSize: "1.3rem", color: "black" }} />
-    }
+    expandIcon={<AddIcon sx={{ fontSize: "1.3rem", color: "black" }} />}
     {...props}
   />
 ))(({ theme }) => ({
-  flexDirection: "row-reverse",
+  flexDirection: "row",
   "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
-    transform: "rotate(90deg)",
+    transform: "rotate(45deg)",
   },
   "& .MuiAccordionSummary-content": {
     marginLeft: theme.spacing(1),
@@ -53,27 +53,40 @@ export default function AccordionSection() {
   return (
     <Box
       sx={{
-        width: "80%",
+        px: "10%",
         mx: "auto",
+        py: 13,
         height: "100vh",
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
+        backgroundColor: "#a5d4e4",
       }}
     >
-      <Box>
-        <Typography variant="h1">Why choose Hatch?</Typography>
+      <Box sx={{ width: "40%" }}>
+        <Typography variant="h1" pb={10}>
+          Why choose Hatch?
+        </Typography>
+        <img
+          src="/images/aaron-burden-LNwn_A9RGHo-unsplash.jpg"
+          style={{
+            objectFit: "contain",
+            display: "block",
+            maxWidth: "100%",
+            height: "auto",
+          }}
+        />
       </Box>
-      <Box sx={{ width: "50%" }}>
+      <Box sx={{ width: "50%", pt: "2rem" }}>
         <Accordion
           expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}
         >
           <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-            <Typography variant="h4">Collapsible Group Item #1</Typography>
+            <Typography variant="h2">Collapsible Group Item #1</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography variant="h5" p={2}>
+            <Typography variant="h3" p={2}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
               eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -87,10 +100,10 @@ export default function AccordionSection() {
           onChange={handleChange("panel2")}
         >
           <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-            <Typography variant="h4">Collapsible Group Item #2</Typography>
+            <Typography variant="h2">Collapsible Group Item #2</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography variant="h5" p={2}>
+            <Typography variant="h3" p={2}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
               eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -104,10 +117,10 @@ export default function AccordionSection() {
           onChange={handleChange("panel3")}
         >
           <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-            <Typography variant="h4">Collapsible Group Item #3</Typography>
+            <Typography variant="h2">Collapsible Group Item #3</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography variant="h5" p={2}>
+            <Typography variant="h3" p={2}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
               eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
