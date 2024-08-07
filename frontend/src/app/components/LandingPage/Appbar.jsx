@@ -22,16 +22,7 @@ import { Link } from "@mui/material"
 const drawerWidth = 240
 const navItems = ["WHAT WE TEACH", "ONLINE TUITION", "ABOUT", "CURRICULUM"]
 
-interface HideOnScrollProps {
-  children: React.ReactElement
-  window?: () => Window
-}
-
-interface DrawerAppBarProps {
-  window?: () => Window
-}
-
-function HideOnScroll(props: HideOnScrollProps) {
+function HideOnScroll(props) {
   const { children, window } = props
   // Note that you normally won't need to set the window ref as useScrollTrigger
   // will default to window.
@@ -47,7 +38,7 @@ function HideOnScroll(props: HideOnScrollProps) {
   )
 }
 
-export default function DrawerAppBar(props: DrawerAppBarProps) {
+export default function DrawerAppBar(props) {
   const { window } = props
   const [mobileOpen, setMobileOpen] = React.useState(false)
 

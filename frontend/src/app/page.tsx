@@ -1,7 +1,11 @@
+"use client"
+
 import Head from "next/head"
 import Home from "./components/LandingPage/Home"
 import AppBar from "./components/LandingPage/Appbar"
 import { Montserrat } from "next/font/google"
+import { ThemeProvider } from "@mui/material/styles"
+import theme from "../styles/theme"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -16,8 +20,10 @@ export default function Page() {
         <meta name="description" content="Tuition services" />
       </Head>
       <main className={montserrat.className}>
-        <AppBar />
-        <Home />
+        <ThemeProvider theme={theme}>
+          <AppBar />
+          <Home />
+        </ThemeProvider>
       </main>
     </div>
   )
