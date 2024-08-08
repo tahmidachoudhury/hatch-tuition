@@ -56,19 +56,19 @@ export default function AccordionSection() {
         px: "10%",
         mx: "auto",
         py: 13,
-        height: "100vh",
         display: "flex",
-        flexDirection: "row",
+        flexDirection: { xs: "column", md: "row" },
         justifyContent: "space-between",
         backgroundColor: "#a5d4e4",
       }}
     >
-      <Box sx={{ width: "40%" }}>
+      <Box sx={{ width: { xs: "100%", md: "40%" } }}>
         <Typography variant="h1" pb={10}>
           Why choose Hatch?
         </Typography>
         <img
           src="/images/aaron-burden-LNwn_A9RGHo-unsplash.jpg"
+          className="responsive-image"
           style={{
             objectFit: "contain",
             display: "block",
@@ -77,7 +77,7 @@ export default function AccordionSection() {
           }}
         />
       </Box>
-      <Box sx={{ width: "50%", pt: "2rem" }}>
+      <Box sx={{ width: { xs: "100%", md: "50%" }, pt: "2rem" }}>
         <Accordion
           expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}
