@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css"
 import Box from "@mui/material/Box"
 import Image from "next/image"
 import { Typography } from "@mui/material"
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew"
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos"
 
 const examboards = [
   "DFE.png",
@@ -17,6 +19,28 @@ const examboards = [
   "wjec.png",
 ]
 
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props
+  return (
+    <ArrowBackIosNewIcon
+      className={className}
+      style={{ ...style, display: "block", cursor: "pointer" }}
+      onClick={onClick}
+    />
+  )
+}
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props
+  return (
+    <ArrowForwardIosIcon
+      className={className}
+      style={{ ...style, display: "block", cursor: "pointer" }}
+      onClick={onClick}
+    />
+  )
+}
+
 const settings = {
   dots: true,
   lazyLoad: true,
@@ -25,6 +49,8 @@ const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   initialSlide: 0,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
   responsive: [
     {
       breakpoint: 1024,
