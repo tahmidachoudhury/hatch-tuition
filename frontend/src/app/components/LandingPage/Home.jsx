@@ -17,6 +17,7 @@ export default function Home() {
     <Box>
       <Hero />
       <ExamBoards />
+      {/* <SimpleSlider /> */}
       <ReviewSection />
       <AccordionSection />
       <CustomizedAccordions />
