@@ -69,6 +69,7 @@ export default function AccordionSection() {
         <img
           src="/images/aaron-burden-LNwn_A9RGHo-unsplash.jpg"
           className="responsive-image"
+          alt="paper on desk"
           style={{
             objectFit: "contain",
             display: "block",

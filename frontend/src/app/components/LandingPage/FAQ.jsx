@@ -55,7 +55,7 @@ export default function CustomizedAccordions() {
 
   return (
     <Box sx={{ pb: "10px", display: "flex", justifyContent: "center" }}>
-      <Box sx={{ width: "60%", m: "auto" }}>
+      <Box sx={{ width: { xs: "90%", md: "60%" }, m: "auto" }}>
         <Typography variant="h1" sx={{ pb: 6, pt: 4, textAlign: "center" }}>
           Frequently Asked
         </Typography>
