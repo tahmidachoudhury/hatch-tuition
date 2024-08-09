@@ -112,7 +112,7 @@ export default function CustomizedAccordions() {
               Nope!
             </Typography>
             <Typography sx={{ my: 1 }} gutterBottom>
-              All of our contracts are on a month-to-month basis, we don't
+              All of our contracts are on a month-to-month basis, we don&apos;t
               believe in long term tie downs. Parents stay with us because we
               deliver stellar results, not because they signed a piece of
               contract saying they have to.
