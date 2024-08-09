@@ -90,7 +90,7 @@ export default function AccordionSection() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="h3" p={2}>
-              Our tuition services are designed to cater to each student's
+              Our tuition services are designed to cater to each student&apos;s
               unique learning needs and styles. We assess individual strengths
               and areas for improvement, crafting tailored lesson plans that
               ensure effective and engaging learning.This personalized attention
@@ -109,13 +109,13 @@ export default function AccordionSection() {
           <AccordionDetails>
             <Typography variant="h3" p={2}>
               We understand the importance of balancing education with other
-              commitments. That's why our tuition services offer both online and
-              in-person sessions. Online lessons provide the convenience of
-              learning from home or any preferred location, while in-person
-              sessions offer a more traditional, hands-on approach. Our
-              adaptable scheduling ensures that learning can fit seamlessly into
-              your student's busy life, making it easier to stay consistent and
-              motivated.
+              commitments. That&apos;s why our tuition services offer both
+              online and in-person sessions. Online lessons provide the
+              convenience of learning from home or any preferred location, while
+              in-person sessions offer a more traditional, hands-on approach.
+              Our adaptable scheduling ensures that learning can fit seamlessly
+              into your student&apos;s busy life, making it easier to stay
+              consistent and motivated.
             </Typography>
           </AccordionDetails>
         </Accordion>
