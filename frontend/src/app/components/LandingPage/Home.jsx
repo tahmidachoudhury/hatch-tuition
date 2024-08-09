@@ -11,6 +11,8 @@ import ExamBoards from "./ExamBoards"
 import Footer from "./Footer"
 import SimpleSlider from "./Slider"
 import AccordionSection from "./AccordionSection"
+import Online from "./Online"
+import CustomizedTables from "./CustomizedTables"
 
 export default function Home() {
   return (
@@ -18,11 +20,13 @@ export default function Home() {
       <Hero />
       <ExamBoards />
       {/* <SimpleSlider /> */}
-      <ReviewSection />
+      {/* <ReviewSection /> */}
+      {/* <Online /> */}
       <AccordionSection />
-      <CustomizedAccordions />
+      <CustomizedTables />
       <Calendly />
-      <ContactForm />
+      <CustomizedAccordions />
+      {/* <ContactForm /> */}
       <Footer />
     </Box>
   )

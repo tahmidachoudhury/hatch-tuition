@@ -82,16 +82,16 @@ const settings = {
 export default function ExamBoards() {
   return (
     <Box>
-      <Box sx={{ width: "80%", mx: "auto" }}>
+      <Box sx={{ width: "80%", mx: "auto", py: 10 }}>
         <Box>
           <h1>Tailored Towards All Exam Boards</h1>
-          <Typography width={{ xs: "100%", md: "40%" }}>
+          <Typography sx={{ pt: 2, pb: 10 }} width={{ xs: "100%", md: "40%" }}>
             All courses at Hatch are tailored towards each students specific
             exam boards. With decades of experience in education, Hatch is able
             to ensure all details of the respective specification are met!
           </Typography>
         </Box>
-        <Slider {...settings}>
+        <Slider {...settings} style={{ paddingBottom: "30px" }}>
           {examboards.map((board, index) => (
             <Box key={index}>
               <img

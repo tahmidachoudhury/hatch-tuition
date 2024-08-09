@@ -1,3 +1,13 @@
 /* * {
   border: 1px solid red;
 } */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  .responsive-image {
+    display: none !important;
+  }
+}

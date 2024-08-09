@@ -79,6 +79,7 @@ export default function DrawerAppBar(props) {
             bgcolor: { xs: "transparent" },
             boxShadow: "none",
             position: { xs: "relative", sm: "fixed" },
+            border: "none",
           }}
         >
           <Toolbar
@@ -128,26 +129,7 @@ export default function DrawerAppBar(props) {
               <Button
                 sx={{ color: "#fff", fontSize: { sm: "10px", md: "13px" } }}
               >
-                <Link>What we teach</Link>
-              </Button>
-              <Button
-                sx={{
-                  color: "#fff",
-                  fontSize: { sm: "10px", md: "13px" },
-                }}
-              >
-                <Link>Online tuition</Link>
-              </Button>
-
-              <Button
-                sx={{ color: "#fff", fontSize: { sm: "10px", md: "13px" } }}
-              >
-                <Link>About</Link>
-              </Button>
-              <Button
-                sx={{ color: "#fff", fontSize: { sm: "10px", md: "13px" } }}
-              >
-                <Link>curriculum</Link>
+                <Link href="#calendly-widget">Book a call</Link>
               </Button>
             </Box>
           </Toolbar>
