@@ -62,7 +62,7 @@ export default function Footer() {
           justifyContent: "space-between",
         }}
       >
-        <Box
+        {/* <Box
           sx={{
             display: { xs: "flex", sm: "flex" },
             py: 2,
@@ -85,7 +85,7 @@ export default function Footer() {
           <Link underline="none" color="text.secondary" href="#">
             FAQs
           </Link>
-        </Box>
+        </Box> */}
         <Box
           sx={{
             display: { xs: "flex", sm: "flex" },

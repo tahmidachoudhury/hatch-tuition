@@ -83,15 +83,18 @@ export default function AccordionSection() {
           onChange={handleChange("panel1")}
         >
           <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-            <Typography variant="h2">Collapsible Group Item #1</Typography>
+            <Typography variant="h2">
+              Personalized Learning Experience
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="h3" p={2}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              Our tuition services are designed to cater to each student's
+              unique learning needs and styles. We assess individual strengths
+              and areas for improvement, crafting tailored lesson plans that
+              ensure effective and engaging learning.This personalized attention
+              ensures that students not only achieve academic success but also
+              develop a genuine interest in the subject matter.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -100,15 +103,18 @@ export default function AccordionSection() {
           onChange={handleChange("panel2")}
         >
           <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-            <Typography variant="h2">Collapsible Group Item #2</Typography>
+            <Typography variant="h2">Flexibility and Convenience</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="h3" p={2}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              We understand the importance of balancing education with other
+              commitments. That's why our tuition services offer both online and
+              in-person sessions. Online lessons provide the convenience of
+              learning from home or any preferred location, while in-person
+              sessions offer a more traditional, hands-on approach. Our
+              adaptable scheduling ensures that learning can fit seamlessly into
+              your student's busy life, making it easier to stay consistent and
+              motivated.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -117,15 +123,18 @@ export default function AccordionSection() {
           onChange={handleChange("panel3")}
         >
           <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-            <Typography variant="h2">Collapsible Group Item #3</Typography>
+            <Typography variant="h2">
+              Expert Tutors with Proven Success
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="h3" p={2}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              Our team of experienced tutors are fully DBS checked and are
+              passionate about teaching, committed to student success. With
+              expertise in their respective fields, they bring a wealth of
+              knowledge and practical insights to each session. Our tutors use
+              proven teaching methods and resources to help students excel in
+              their studies.
             </Typography>
           </AccordionDetails>
         </Accordion>

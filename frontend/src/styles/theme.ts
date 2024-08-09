@@ -77,7 +77,7 @@ const theme = createTheme({
       dark: "#115293",
       contrastText: "#fff",
     },
-    divider: "black",
+    divider: "#000000",
     secondary: {
       main: "#dc004e",
       light: "#ff6f6b",
