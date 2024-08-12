@@ -11,6 +11,9 @@ import {
   Typography,
 } from "@mui/material"
 import CheckCircleIcon from "@mui/icons-material/CheckCircle"
+import { CiCalendar } from "react-icons/ci"
+import { PiChartLineUp } from "react-icons/pi"
+import { MdOutlineForum } from "react-icons/md"
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props
@@ -23,7 +26,7 @@ function CustomTabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      {value === index && <Box sx={{ m: 0, py: 5 }}>{children}</Box>}
     </div>
   )
 }
@@ -49,59 +52,83 @@ export default function CentreTabs() {
   }
 
   return (
-    <Box display="flex" justifyContent="center">
+    <Box
+      display="flex"
+      flexDirection="column"
+      py={8}
+      gap={2}
+      alignItems="center"
+    >
+      <Typography variant="h1">The PMC Formula</Typography>
       <Box sx={{ width: "fit-content" }}>
-        <Box sx={{ width: "100%" }}>
+        <Box display="flex" justifyContent="center">
           <Tabs
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
           >
-            <Tab label="Plan" {...a11yProps(0)} />
-            <Tab label="Monitor" {...a11yProps(1)} />
-            <Tab label="Communication" {...a11yProps(2)} />
+            <Tab
+              icon={<CiCalendar size={28} />}
+              iconPosition="start"
+              label="Plan"
+              {...a11yProps(0)}
+            />
+            <Tab
+              icon={<PiChartLineUp size={28} />}
+              iconPosition="start"
+              label="Monitor"
+              {...a11yProps(1)}
+            />
+            <Tab
+              icon={<MdOutlineForum size={28} />}
+              iconPosition="start"
+              label="Communicate"
+              {...a11yProps(2)}
+            />
           </Tabs>
         </Box>
-        <Box>
+
+        <Box sx={{ width: "410px" }}>
           <CustomTabPanel value={value} index={0}>
             <Typography variant="h2" gutterBottom>
               Plan
             </Typography>
             <Typography gutterBottom>
-              Assessing your child's strengths and weaknesses, following up with
-              challenging and attainable goals.
+              We start by assessing your child&apos;s strengths and weaknesses.
+              This way we can make an estimate of their current working grade.
             </Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon>
+            <List sx={{ py: "1rem" }}>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="Strength & Weakness Consultation" />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
+                </Box>
+                <Typography>Subject-focused Consultation</Typography>
+              </Box>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="Topic Targeted Assessments" />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
+                </Box>
+                <Typography>Topic Targeted Assessments</Typography>
+              </Box>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="Curriculum Checklist" />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
+                </Box>
+                <Typography>Curriculum Checklist</Typography>
+              </Box>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="Exam-board Specific" />
-              </ListItem>
+                </Box>
+                <Typography>Exam-board Specific</Typography>
+              </Box>
             </List>
             <Typography gutterBottom>
-              We set goals towards clearing a curriculum checklist, ensuring the
-              relevant topics are covered and assessed.
+              All that is left is to begin clearing a curriculum checklist,
+              ensuring the relevant topics are covered and assessed.
             </Typography>
           </CustomTabPanel>
+
           <CustomTabPanel value={value} index={1}>
             <Typography variant="h2" gutterBottom>
               Monitor
@@ -110,80 +137,81 @@ export default function CentreTabs() {
               Monitoring through assessments each month accompanied by brief
               weekly reports.
             </Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon>
+            <List sx={{ py: "1rem" }}>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="in-class performance" />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
+                </Box>
+                <Typography>In-class Performance</Typography>
+              </Box>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="homework reviews" />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
+                </Box>
+                <Typography>Homework Reviews</Typography>
+              </Box>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="easy to read weekly reports" />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
+                </Box>
+                <Typography>Easy to Read Weekly Reports</Typography>
+              </Box>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="improved attitude towards studying" />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
+                </Box>
+                <Typography>Improved Attitude Towards Studying</Typography>
+              </Box>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="Driven progress" />
-              </ListItem>
+                </Box>
+                <Typography>Driven progress</Typography>
+              </Box>
             </List>
             <Typography gutterBottom>
-              We send you assessment results and weekly reports, tracking your
-              child's progress.
+              We will send you assessment results and weekly reports, tracking
+              your child&apos;s progress.
             </Typography>
           </CustomTabPanel>
+
           <CustomTabPanel value={value} index={2}>
             <Typography variant="h2" gutterBottom>
               Communication
             </Typography>
             <Typography gutterBottom>
-              We offer monthly meetings to discuss your child's overall
+              We offer monthly meetings to discuss your child&apos;s overall
               progress.
             </Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon>
+            <List sx={{ py: "1rem" }}>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="Goal Adjustment" />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
+                </Box>
+                <Typography>Goal Adjustment</Typography>
+              </Box>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="Monthly Recap" />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
+                </Box>
+                <Typography>Monthly Recap</Typography>
+              </Box>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="Progress Review" />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
+                </Box>
+                <Typography>Progress Review</Typography>
+              </Box>
+              <Box display="flex" py="4px">
+                <Box sx={{ mx: "8px" }}>
                   <CheckCircleIcon />
-                </ListItemIcon>
-                <ListItemText primary="A plan for the next month" />
-              </ListItem>
+                </Box>
+                <Typography>A plan for the next month</Typography>
+              </Box>
             </List>
             <Typography gutterBottom>
-              Ensuring we are all aligned in supporting your child's educational
-              journey.
+              Ensuring we are all aligned in supporting your child&apos;s
+              educational journey.
             </Typography>
           </CustomTabPanel>
         </Box>
