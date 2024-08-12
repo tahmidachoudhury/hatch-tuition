@@ -1,6 +1,6 @@
 "use client"
 import { Lato } from "next/font/google"
-import { createTheme } from "@mui/material/styles"
+import { createTheme, responsiveFontSizes } from "@mui/material/styles"
 
 const lato = Lato({
   weight: ["300", "400", "700"],
@@ -8,7 +8,7 @@ const lato = Lato({
   display: "swap",
 })
 
-const theme = createTheme({
+let theme = createTheme({
   typography: {
     fontFamily: lato.style.fontFamily,
     h1: {
@@ -172,5 +172,7 @@ const theme = createTheme({
     },
   },
 })
+
+theme = responsiveFontSizes(theme)
 
 export default theme

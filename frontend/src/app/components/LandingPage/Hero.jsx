@@ -37,7 +37,9 @@ export default function Hero() {
         pb: "20px",
       }}
     >
-      <Typography variant="h4">For students. By students.</Typography>
+      <Typography variant="h4">
+        Catching up? Getting ahead? Preparing for exams?
+      </Typography>
       <Typography variant="h1">Reach your potential.</Typography>
     </Box>
   )

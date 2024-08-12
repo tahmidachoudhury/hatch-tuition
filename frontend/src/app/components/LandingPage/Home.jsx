@@ -13,12 +13,14 @@ import SimpleSlider from "./Slider"
 import AccordionSection from "./AccordionSection"
 import Online from "./Online"
 import CustomizedTables from "./CustomizedTables"
+import CentreTabs from "./CentreTabs"
 
 export default function Home() {
   return (
     <Box>
       <Hero />
       <ExamBoards />
+      <CentreTabs />
       {/* <SimpleSlider /> */}
       {/* <ReviewSection /> */}
       {/* <Online /> */}
