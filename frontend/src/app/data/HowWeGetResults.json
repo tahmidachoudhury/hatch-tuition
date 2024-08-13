@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "icon": "CiCompass1",
+    "subject": "Assess",
+    "content": "We assess your current level, ability and skill with years of insight and experience."
+  },
+  {
+    "id": 2,
+    "icon": "CiCalendar",
+    "subject": "Plan",
+    "content": "We map out relevant topics, subjects and assessments that will need to be covered to meet the desired grade."
+  },
+  {
+    "id": 3,
+    "icon": "TfiStatsUp",
+    "subject": "Achieve",
+    "content": "We set challenging, attainable goals and foster self-competition."
+  },
+  {
+    "id": 4,
+    "icon": "BsBarChartFill",
+    "subject": "Iterate",
+    "content": "We communicate the performance with the parents and repeat the process. With brief weekly reports on results."
+  }
+]

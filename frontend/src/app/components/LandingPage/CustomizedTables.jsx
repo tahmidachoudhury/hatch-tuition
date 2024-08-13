@@ -15,6 +15,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     backgroundColor: "#a5d4e4",
     color: "#a5d4e4",
   },
+
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
   },
@@ -22,7 +23,8 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   "&:nth-of-type(odd)": {
-    backgroundColor: "light-grey",
+    backgroundColor: "#f2f2f2",
+    borderRadius: "100px",
   },
   // hide last border
   "&:last-child td, &:last-child th": {
@@ -50,17 +52,31 @@ export default function CustomizedTables() {
         <TableContainer
           component={Paper}
           sx={{
-            width: { xs: "100%", md: "50%" },
+            width: { xs: "95%", md: "50%" },
           }}
         >
           <Table aria-label="customized table">
             <TableBody>
               {rows.map((row) => (
                 <StyledTableRow key={row.name}>
-                  <StyledTableCell component="th" scope="row" align="center">
+                  <StyledTableCell
+                    component="th"
+                    scope="row"
+                    align="center"
+                    style={{
+                      borderTopLeftRadius: "10px",
+                      borderBottomLeftRadius: "10px",
+                    }}
+                  >
                     <Typography variant="h5">{row.name}</Typography>
                   </StyledTableCell>
-                  <StyledTableCell align="center">
+                  <StyledTableCell
+                    align="center"
+                    style={{
+                      borderTopRightRadius: "10px",
+                      borderBottomRightRadius: "10px",
+                    }}
+                  >
                     {row.calories}
                   </StyledTableCell>
                 </StyledTableRow>
