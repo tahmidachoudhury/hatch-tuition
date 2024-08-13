@@ -1,0 +1,39 @@
+[
+  {
+    "id": 0,
+    "title": "Plan",
+    "subject": "We start by assessing your child's strengths and weaknesses. This way we can make an estimate of their current working grade.",
+    "list": [
+      "Subject-focused Consultation",
+      "Topic Targeted Assessments",
+      "Curriculum Checklist",
+      "Exam-board Specific"
+    ],
+    "closing": "All that is left is to begin clearing a curriculum checklist, ensuring the relevant topics are covered and assessed."
+  },
+  {
+    "id": 1,
+    "title": "Monitor",
+    "subject": "Monitoring through assessments each month accompanied by brief weekly reports.",
+    "list": [
+      "In-class Performance",
+      "Homework Reviews",
+      "Easy to Read Weekly Reports",
+      "Improved Attitude Towards Studying",
+      "Driven progress"
+    ],
+    "closing": "We will send you assessment results and weekly reports, tracking your child's progress."
+  },
+  {
+    "id": 2,
+    "title": "Communicate",
+    "subject": "We offer monthly meetings to discuss your child's overall progress.",
+    "list": [
+      "Goal Adjustment",
+      "Monthly Recap",
+      "Progress Review",
+      "A plan for the next month"
+    ],
+    "closing": "Ensuring we are all aligned in supporting your child's educational journey."
+  }
+]
