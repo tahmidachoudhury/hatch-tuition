@@ -94,7 +94,7 @@ export default function DrawerAppBar(props) {
               onClick={() => handleDrawerToggle()}
               sx={{
                 m: 0,
-                display: { sm: "none" },
+                display: { xs: "none" },
                 flex: 1,
                 justifyContent: "left",
               }}
@@ -120,7 +120,7 @@ export default function DrawerAppBar(props) {
 
             <Box
               sx={{
-                display: { xs: "none", sm: "flex" },
+                display: "flex",
                 flex: 1,
                 textAlign: "right",
                 justifyContent: "right",
