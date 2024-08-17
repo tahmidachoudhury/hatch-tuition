@@ -84,7 +84,7 @@ export default function ExamBoards() {
     <Box>
       <Box sx={{ width: "80%", mx: "auto", py: 10 }}>
         <Box>
-          <h1>Tailored Towards All Exam Boards</h1>
+          <Typography variant="h1">Tailored Towards All Exam Boards</Typography>
           <Typography sx={{ pt: 2, pb: 10 }} width={{ xs: "100%", md: "40%" }}>
             All courses at Hatch are tailored towards each students specific
             exam boards. With decades of experience in education, Hatch is able

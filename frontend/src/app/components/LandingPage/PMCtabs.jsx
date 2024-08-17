@@ -88,7 +88,9 @@ export default function CentreTabs() {
       alignItems="center"
       backgroundColor="#a5d4e4"
     >
-      <Typography variant="h1">The PMC Formula</Typography>
+      <Typography variant="h1" color="#4a5c64">
+        The PMC Formula
+      </Typography>
       <Box sx={{ width: "fit-content" }}>
         <Box display="flex" justifyContent="center">
           <StyledTabs
@@ -120,21 +122,25 @@ export default function CentreTabs() {
         <Box sx={{ width: "350px", m: "auto" }}>
           {data.map((item) => (
             <CustomTabPanel value={value} index={item.id} key={item.id}>
-              <Typography variant="h2" gutterBottom>
+              <Typography variant="h2" color="#4a5c64" gutterBottom>
                 {item.title}
               </Typography>
-              <Typography gutterBottom>{item.subject}</Typography>
+              <Typography color="#4a5c64" gutterBottom>
+                {item.subject}
+              </Typography>
               <List sx={{ py: "1rem" }}>
                 {item.list.map((listItem) => (
                   <Box display="flex" py="8px" key={listItem}>
                     <Box sx={{ mx: "8px" }}>
                       <CheckCircleIcon />
                     </Box>
-                    <Typography>{listItem}</Typography>
+                    <Typography color="#4a5c64">{listItem}</Typography>
                   </Box>
                 ))}
               </List>
-              <Typography gutterBottom>{item.closing}</Typography>
+              <Typography color="#4a5c64" gutterBottom>
+                {item.closing}
+              </Typography>
             </CustomTabPanel>
           ))}
         </Box>
