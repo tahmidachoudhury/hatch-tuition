@@ -15,7 +15,7 @@ const iconMap = {
 
 export default function PlanToResults() {
   return (
-    <Box py="2rem" display="flex" flexDirection="column" alignItems="center">
+    <Box py="8rem" display="flex" flexDirection="column" alignItems="center">
       <Typography variant="h1">How We Get Results</Typography>
       <Box
         py="6rem"

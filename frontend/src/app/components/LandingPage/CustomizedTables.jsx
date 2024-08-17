@@ -37,7 +37,7 @@ export default function CustomizedTables() {
     <>
       <Box
         sx={{
-          aspectRatio: 960 / 300,
+          aspectRatio: { xs: 120 / 100, md: 960 / 300 },
           width: "100%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
