@@ -21,10 +21,9 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
 }))
 
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
+const StyledTableRow = styled(Box)(({ theme }) => ({
   "&:nth-of-type(odd)": {
     backgroundColor: "#f2f2f2",
-    borderRadius: "100px",
   },
   // hide last border
   "&:last-child td, &:last-child th": {
@@ -32,16 +31,12 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }))
 
-function createData(name, calories) {
-  return { name, calories }
-}
-
 const rows = [
-  createData("Weekly updates on in-class performance", <CheckCircleIcon />),
-  createData("Homework review each lesson", <CheckCircleIcon />),
-  createData("Affordable price packages", <CheckCircleIcon />),
-  createData("Guaranteed progress", <CheckCircleIcon />),
-  createData("Termly progress tests", <CheckCircleIcon />),
+  "Weekly updates on in-class performance",
+  "Homework review each lesson",
+  "Affordable price packages",
+  "Guaranteed progress",
+  "Termly progress tests",
 ]
 
 export default function CustomizedTables() {
@@ -49,41 +44,26 @@ export default function CustomizedTables() {
     <Box textAlign="center" py={10}>
       <Typography variant="h1">What we offer</Typography>
       <Box sx={{ display: "flex", justifyContent: "center", pt: 5 }}>
-        <TableContainer
-          component={Paper}
+        <Paper
           sx={{
-            width: { xs: "95%", md: "50%" },
+            width: { xs: "90%", md: "60%" },
           }}
         >
-          <Table aria-label="customized table">
-            <TableBody>
-              {rows.map((row) => (
-                <StyledTableRow key={row.name}>
-                  <StyledTableCell
-                    component="th"
-                    scope="row"
-                    align="center"
-                    style={{
-                      borderTopLeftRadius: "10px",
-                      borderBottomLeftRadius: "10px",
-                    }}
-                  >
-                    <Typography variant="h5">{row.name}</Typography>
-                  </StyledTableCell>
-                  <StyledTableCell
-                    align="center"
-                    style={{
-                      borderTopRightRadius: "10px",
-                      borderBottomRightRadius: "10px",
-                    }}
-                  >
-                    {row.calories}
-                  </StyledTableCell>
-                </StyledTableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+          {rows.map((row) => (
+            <StyledTableRow
+              display="flex"
+              sx={{
+                flexDirection: { xs: "column", sm: "row" },
+                p: { xs: 1.5, sm: 3 },
+              }}
+            >
+              <Typography sx={{ flex: 1 }}>{row}</Typography>
+              <CheckCircleIcon
+                sx={{ flex: 2, alignSelf: "center", py: { xs: 2, sm: 0 } }}
+              />
+            </StyledTableRow>
+          ))}
+        </Paper>
       </Box>
     </Box>
   )

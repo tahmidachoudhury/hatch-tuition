@@ -15,7 +15,9 @@ const Calendly = () => {
   return (
     <Box sx={{ pt: 5 }}>
       <Box display="flex" justifyContent="center">
-        <Typography variant="h1">Book a Call With Us.</Typography>
+        <Typography variant="h1" sx={{ pb: 4 }}>
+          Book a Call With Us.
+        </Typography>
       </Box>
       <Box
         className="calendly-inline-widget"

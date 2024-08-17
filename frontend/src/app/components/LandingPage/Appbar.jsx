@@ -76,7 +76,7 @@ export default function DrawerAppBar(props) {
         <AppBar
           component="nav"
           sx={{
-            bgcolor: { xs: "transparent" },
+            bgcolor: { xs: "#224162", sm: "transparent" },
             boxShadow: "none",
             position: { xs: "relative", sm: "fixed" },
             border: "none",
@@ -94,7 +94,7 @@ export default function DrawerAppBar(props) {
               onClick={() => handleDrawerToggle()}
               sx={{
                 m: 0,
-                display: { sm: "none" },
+                display: { xs: "none" },
                 flex: 1,
                 justifyContent: "left",
               }}
@@ -120,7 +120,7 @@ export default function DrawerAppBar(props) {
 
             <Box
               sx={{
-                display: { xs: "none", sm: "flex" },
+                display: "flex",
                 flex: 1,
                 textAlign: "right",
                 justifyContent: "right",
