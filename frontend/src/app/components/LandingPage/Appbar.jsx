@@ -76,7 +76,7 @@ export default function DrawerAppBar(props) {
         <AppBar
           component="nav"
           sx={{
-            bgcolor: { xs: "transparent" },
+            bgcolor: { xs: "#224162", sm: "transparent" },
             boxShadow: "none",
             position: { xs: "relative", sm: "fixed" },
             border: "none",
