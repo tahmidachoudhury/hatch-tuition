@@ -4,10 +4,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @media (max-width: 600px) {
   .responsive-image {
     display: none !important;
   }
+}
+
+.layer1 {
+  background-image: url("/icons/layered-waves-haikei.svg");
 }
