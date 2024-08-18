@@ -81,7 +81,7 @@ const settings = {
 
 export default function ExamBoards() {
   return (
-    <Box>
+    <Box bgcolor="#ffffff">
       <Box sx={{ width: "80%", mx: "auto", py: 10 }}>
         <Box>
           <Typography variant="h1">Tailored Towards All Exam Boards</Typography>

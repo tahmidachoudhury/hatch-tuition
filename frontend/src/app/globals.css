@@ -16,3 +16,10 @@ html {
 .layer1 {
   background-image: url("/icons/layered-waves-haikei.svg");
 }
+
+.wave .shape-fill {
+  fill: #001220;
+}
+.wave .shape-fill-2 {
+  fill: #ffffff;
+}
