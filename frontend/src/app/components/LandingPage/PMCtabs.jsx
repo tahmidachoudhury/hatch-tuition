@@ -93,7 +93,7 @@ export default function CentreTabs() {
 
           transform: {
             xs: "translateX(-50%) rotate(180deg)",
-            sm: "rotate(180deg)",
+            md: "rotate(180deg)",
           },
         }}
       >
