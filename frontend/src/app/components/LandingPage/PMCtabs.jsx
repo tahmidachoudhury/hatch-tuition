@@ -80,69 +80,107 @@ export default function CentreTabs() {
   }
 
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      py={8}
-      gap={2}
-      alignItems="center"
-      backgroundColor="#a5d4e4"
-    >
-      <Typography variant="h1" color="#4a5c64">
-        The PMC Formula
-      </Typography>
-      <Box sx={{ width: "fit-content" }}>
-        <Box display="flex" justifyContent="center">
-          <StyledTabs
-            value={value}
-            onChange={handleChange}
-            aria-label="basic tabs example"
-          >
-            <StyledTab
-              icon={<CiCalendar size={28} />}
-              iconPosition="start"
-              label="Plan"
-              {...a11yProps(0)}
-            />
-            <StyledTab
-              icon={<PiChartLineUp size={28} />}
-              iconPosition="start"
-              label="Monitor"
-              {...a11yProps(1)}
-            />
-            <StyledTab
-              icon={<MdOutlineForum size={28} />}
-              iconPosition="start"
-              label="Communicate"
-              {...a11yProps(2)}
-            />
-          </StyledTabs>
-        </Box>
+    <Box position="relative">
+      <Box
+        className="wave"
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: { xs: "200%", md: "100%" },
+          overflow: "hidden",
+          lineHeight: 0,
 
-        <Box sx={{ width: "350px", m: "auto" }}>
-          {data.map((item) => (
-            <CustomTabPanel value={value} index={item.id} key={item.id}>
-              <Typography variant="h2" color="#4a5c64" gutterBottom>
-                {item.title}
-              </Typography>
-              <Typography color="#4a5c64" gutterBottom>
-                {item.subject}
-              </Typography>
-              <List sx={{ py: "1rem" }}>
-                {item.list.map((listItem) => (
-                  <Box display="flex" py="8px" key={listItem}>
-                    <Box sx={{ mx: "8px" }}>
-                      <CheckCircleIcon />
+          transform: {
+            xs: "translateX(-50%) rotate(180deg)",
+            sm: "rotate(180deg)",
+          },
+        }}
+      >
+        <svg
+          style={{
+            position: "relative",
+            display: "block",
+            width: "calc(100% + 1.3px)",
+            height: "158px",
+          }}
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            className="shape-fill-2"
+          ></path>
+        </svg>
+      </Box>
+
+      <Box
+        display="flex"
+        flexDirection="column"
+        py={8}
+        pt={26}
+        gap={2}
+        alignItems="center"
+        backgroundColor="#a5d4e4"
+      >
+        <Typography variant="h1" color="#4a5c64">
+          The PMC Formula
+        </Typography>
+        <Box sx={{ width: "fit-content" }}>
+          <Box display="flex" justifyContent="center">
+            <StyledTabs
+              value={value}
+              onChange={handleChange}
+              aria-label="basic tabs example"
+            >
+              <StyledTab
+                icon={<CiCalendar size={28} />}
+                iconPosition="start"
+                label="Plan"
+                {...a11yProps(0)}
+              />
+              <StyledTab
+                icon={<PiChartLineUp size={28} />}
+                iconPosition="start"
+                label="Monitor"
+                {...a11yProps(1)}
+              />
+              <StyledTab
+                icon={<MdOutlineForum size={28} />}
+                iconPosition="start"
+                label="Communicate"
+                {...a11yProps(2)}
+              />
+            </StyledTabs>
+          </Box>
+
+          <Box sx={{ width: "350px", m: "auto" }}>
+            {data.map((item) => (
+              <CustomTabPanel value={value} index={item.id} key={item.id}>
+                <Typography variant="h2" color="#4a5c64" gutterBottom>
+                  {item.title}
+                </Typography>
+                <Typography color="#4a5c64" gutterBottom>
+                  {item.subject}
+                </Typography>
+                <List sx={{ py: "1rem" }}>
+                  {item.list.map((listItem) => (
+                    <Box display="flex" py="8px" key={listItem}>
+                      <Box sx={{ mx: "8px" }}>
+                        <CheckCircleIcon />
+                      </Box>
+                      <Typography color="#4a5c64">{listItem}</Typography>
                     </Box>
-                    <Typography color="#4a5c64">{listItem}</Typography>
-                  </Box>
-                ))}
-              </List>
-              <Typography color="#4a5c64" gutterBottom>
-                {item.closing}
-              </Typography>
-            </CustomTabPanel>
-          ))}
+                  ))}
+                </List>
+                <Typography color="#4a5c64" gutterBottom>
+                  {item.closing}
+                </Typography>
+              </CustomTabPanel>
+            ))}
+          </Box>
         </Box>
       </Box>
     </Box>
