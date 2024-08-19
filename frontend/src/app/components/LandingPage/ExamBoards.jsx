@@ -82,6 +82,16 @@ const settings = {
 export default function ExamBoards() {
   return (
     <Box bgcolor="#ffffff">
+      <Box
+        sx={{
+          aspectRatio: { xs: 120 / 100, md: 960 / 300 },
+          width: "100%",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+        className="layer2"
+      />
       <Box sx={{ width: "80%", mx: "auto", py: 10 }}>
         <Box>
           <Typography variant="h1">Tailored Towards All Exam Boards</Typography>

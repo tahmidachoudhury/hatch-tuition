@@ -17,6 +17,10 @@ html {
   background-image: url("/icons/layered-waves-haikei.svg");
 }
 
+.layer2 {
+  background-image: url("/icons/layered-peaks-haikei.svg");
+}
+
 .wave .shape-fill {
   fill: #001220;
 }
