@@ -166,7 +166,7 @@ export default function Footer() {
 
           <IconButton
             color="inherit"
-            href=""
+            href="https://www.instagram.com/hatchtuition/"
             target="_blank"
             aria-label="Instagram"
             sx={{ alignSelf: "center" }}
