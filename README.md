@@ -59,16 +59,15 @@ _Here is the main page for the site. It is a basic static page, providing parent
 ![Feature 1](images/responsive-design1.png)
 _After completing a course on React, I stopped building components myself and switched to a UI library. I chose Material-UI however looking back, Tailwind would have been a better option as there is a lot of flexibility and customisation available._
 
----
-
 _Including plugins such as Daisy ui and component libraries such as Shad-cn, that are compatible with Tailwind CSS._
+
+---
 
 ### Feature 2: Next.js SEO features
 
-![responsive design 1](images/responsive-design1.png)
 ![responsive design 2](images/responsive-design3.png)
 
-_Instead of keeping all buttons the same colour, I found other apps dynamically changing colour when interacted with. After implementing, it really improved the feel of the calculator and made it a lot easier on the eyes._
+_Next.js is popular for SEO. I added a robots.txt file in the public folder for serach engine webcrawlers to index the correct pages. I also changed the meta tags in the headings to optimize for keywords and improve ranking._
 
 ---
 
