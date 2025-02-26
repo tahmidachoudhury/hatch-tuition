@@ -22,7 +22,7 @@ const Calendly = () => {
       <Box
         className="calendly-inline-widget"
         id="calendly-widget"
-        data-url="https://calendly.com/online-hatchtuition/30min"
+        data-url="https://calendly.com/online-hatchtuition/15min"
         sx={{ minWidth: "320px", height: { xs: "820px", md: "700px" } }}
       ></Box>
     </Box>
